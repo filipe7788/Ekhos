@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		097A21C1B43B95D4FD11D872 /* Pods_EkhosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6913C8CA5B6186FFE6031C /* Pods_EkhosTests.framework */; };
+		13C150FC6F096D0E5B469684 /* Pods_Ekhos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B530E0859A410CAE73B4244 /* Pods_Ekhos.framework */; };
+		83F24BEEE0D83F2594420468 /* Pods_Ekhos_EkhosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55D8FEA474CBD4D9DC06070 /* Pods_Ekhos_EkhosUITests.framework */; };
+		EB05D7BE2A59D28A0013CE0E /* Waveform in Frameworks */ = {isa = PBXBuildFile; productRef = EB05D7BD2A59D28A0013CE0E /* Waveform */; };
+		EB1A04CC2A59C7D500DD5F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A04CB2A59C7D500DD5F9B /* AppDelegate.swift */; };
+		EB1A04CE2A59C7D500DD5F9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A04CD2A59C7D500DD5F9B /* SceneDelegate.swift */; };
+		EB1A04D52A59C7D900DD5F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1A04D42A59C7D900DD5F9B /* Assets.xcassets */; };
+		EB1A04D82A59C7D900DD5F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1A04D62A59C7D900DD5F9B /* LaunchScreen.storyboard */; };
+		EB1A04E32A59C7DA00DD5F9B /* EkhosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A04E22A59C7DA00DD5F9B /* EkhosTests.swift */; };
+		EB1A04ED2A59C7DA00DD5F9B /* EkhosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A04EC2A59C7DA00DD5F9B /* EkhosUITests.swift */; };
+		EB1A04EF2A59C7DA00DD5F9B /* EkhosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A04EE2A59C7DA00DD5F9B /* EkhosUITestsLaunchTests.swift */; };
+		EB1A05032A59C84500DD5F9B /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A04FD2A59C84400DD5F9B /* Recording.swift */; };
+		EB1A05042A59C84500DD5F9B /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A04FE2A59C84400DD5F9B /* RecordingView.swift */; };
+		EB1A05052A59C84500DD5F9B /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A04FF2A59C84400DD5F9B /* RecordingViewModel.swift */; };
+		EB1A05062A59C84500DD5F9B /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A05002A59C84400DD5F9B /* RecordingViewController.swift */; };
+		EB1A05072A59C84500DD5F9B /* RecordingInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A05012A59C84400DD5F9B /* RecordingInitializer.swift */; };
+		EB4C10072A5A260E00A7B148 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = EB4C10062A5A260E00A7B148 /* AudioKit */; };
+		EBDEF1852A59E43000CF2FE2 /* DSWaveformImage in Frameworks */ = {isa = PBXBuildFile; productRef = EBDEF1842A59E43000CF2FE2 /* DSWaveformImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB1A04DF2A59C7DA00DD5F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1A04C02A59C7D500DD5F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1A04C72A59C7D500DD5F9B;
+			remoteInfo = Ekhos;
+		};
+		EB1A04E92A59C7DA00DD5F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1A04C02A59C7D500DD5F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1A04C72A59C7D500DD5F9B;
+			remoteInfo = Ekhos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		172397BBA0794570D3B6911A /* Pods-EkhosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkhosTests.release.xcconfig"; path = "Target Support Files/Pods-EkhosTests/Pods-EkhosTests.release.xcconfig"; sourceTree = "<group>"; };
+		31CAEF9C123CFC28C8F0A43A /* Pods-EkhosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkhosTests.debug.xcconfig"; path = "Target Support Files/Pods-EkhosTests/Pods-EkhosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3436C8CC9795132CE9B169E8 /* Pods-Ekhos-EkhosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ekhos-EkhosUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ekhos-EkhosUITests/Pods-Ekhos-EkhosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		67E93E7E41A426E910C04141 /* Pods-Ekhos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ekhos.debug.xcconfig"; path = "Target Support Files/Pods-Ekhos/Pods-Ekhos.debug.xcconfig"; sourceTree = "<group>"; };
+		6B530E0859A410CAE73B4244 /* Pods_Ekhos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ekhos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBFC9AB7E893C70CFAF64A7 /* Pods-Ekhos-EkhosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ekhos-EkhosUITests.release.xcconfig"; path = "Target Support Files/Pods-Ekhos-EkhosUITests/Pods-Ekhos-EkhosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD6913C8CA5B6186FFE6031C /* Pods_EkhosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EkhosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B5ADEA9EC09834E43C4C77 /* Pods-Ekhos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ekhos.release.xcconfig"; path = "Target Support Files/Pods-Ekhos/Pods-Ekhos.release.xcconfig"; sourceTree = "<group>"; };
+		E55D8FEA474CBD4D9DC06070 /* Pods_Ekhos_EkhosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ekhos_EkhosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1A04C82A59C7D500DD5F9B /* Ekhos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekhos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1A04CB2A59C7D500DD5F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB1A04CD2A59C7D500DD5F9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB1A04D42A59C7D900DD5F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1A04D72A59C7D900DD5F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB1A04D92A59C7D900DD5F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1A04DE2A59C7DA00DD5F9B /* EkhosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EkhosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1A04E22A59C7DA00DD5F9B /* EkhosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkhosTests.swift; sourceTree = "<group>"; };
+		EB1A04E82A59C7DA00DD5F9B /* EkhosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EkhosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1A04EC2A59C7DA00DD5F9B /* EkhosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkhosUITests.swift; sourceTree = "<group>"; };
+		EB1A04EE2A59C7DA00DD5F9B /* EkhosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkhosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB1A04FD2A59C84400DD5F9B /* Recording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		EB1A04FE2A59C84400DD5F9B /* RecordingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		EB1A04FF2A59C84400DD5F9B /* RecordingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
+		EB1A05002A59C84400DD5F9B /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		EB1A05012A59C84400DD5F9B /* RecordingInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingInitializer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB1A04C52A59C7D500DD5F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C150FC6F096D0E5B469684 /* Pods_Ekhos.framework in Frameworks */,
+				EBDEF1852A59E43000CF2FE2 /* DSWaveformImage in Frameworks */,
+				EB4C10072A5A260E00A7B148 /* AudioKit in Frameworks */,
+				EB05D7BE2A59D28A0013CE0E /* Waveform in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1A04DB2A59C7DA00DD5F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				097A21C1B43B95D4FD11D872 /* Pods_EkhosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1A04E52A59C7DA00DD5F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F24BEEE0D83F2594420468 /* Pods_Ekhos_EkhosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3060DF1546EA67E522307AC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67E93E7E41A426E910C04141 /* Pods-Ekhos.debug.xcconfig */,
+				D1B5ADEA9EC09834E43C4C77 /* Pods-Ekhos.release.xcconfig */,
+				3436C8CC9795132CE9B169E8 /* Pods-Ekhos-EkhosUITests.debug.xcconfig */,
+				ADBFC9AB7E893C70CFAF64A7 /* Pods-Ekhos-EkhosUITests.release.xcconfig */,
+				31CAEF9C123CFC28C8F0A43A /* Pods-EkhosTests.debug.xcconfig */,
+				172397BBA0794570D3B6911A /* Pods-EkhosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B85AC0E698D1A9728712CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B530E0859A410CAE73B4244 /* Pods_Ekhos.framework */,
+				E55D8FEA474CBD4D9DC06070 /* Pods_Ekhos_EkhosUITests.framework */,
+				CD6913C8CA5B6186FFE6031C /* Pods_EkhosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB1A04BF2A59C7D500DD5F9B = {
+			isa = PBXGroup;
+			children = (
+				EB1A04CA2A59C7D500DD5F9B /* Ekhos */,
+				EB1A04E12A59C7DA00DD5F9B /* EkhosTests */,
+				EB1A04EB2A59C7DA00DD5F9B /* EkhosUITests */,
+				EB1A04C92A59C7D500DD5F9B /* Products */,
+				3060DF1546EA67E522307AC9 /* Pods */,
+				8B85AC0E698D1A9728712CBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1A04C92A59C7D500DD5F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A04C82A59C7D500DD5F9B /* Ekhos.app */,
+				EB1A04DE2A59C7DA00DD5F9B /* EkhosTests.xctest */,
+				EB1A04E82A59C7DA00DD5F9B /* EkhosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1A04CA2A59C7D500DD5F9B /* Ekhos */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A04CB2A59C7D500DD5F9B /* AppDelegate.swift */,
+				EB1A04CD2A59C7D500DD5F9B /* SceneDelegate.swift */,
+				EB1A04FB2A59C84400DD5F9B /* Scenes */,
+				EB1A04D42A59C7D900DD5F9B /* Assets.xcassets */,
+				EB1A04D62A59C7D900DD5F9B /* LaunchScreen.storyboard */,
+				EB1A04D92A59C7D900DD5F9B /* Info.plist */,
+			);
+			path = Ekhos;
+			sourceTree = "<group>";
+		};
+		EB1A04E12A59C7DA00DD5F9B /* EkhosTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A04E22A59C7DA00DD5F9B /* EkhosTests.swift */,
+			);
+			path = EkhosTests;
+			sourceTree = "<group>";
+		};
+		EB1A04EB2A59C7DA00DD5F9B /* EkhosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A04EC2A59C7DA00DD5F9B /* EkhosUITests.swift */,
+				EB1A04EE2A59C7DA00DD5F9B /* EkhosUITestsLaunchTests.swift */,
+			);
+			path = EkhosUITests;
+			sourceTree = "<group>";
+		};
+		EB1A04FB2A59C84400DD5F9B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A04FC2A59C84400DD5F9B /* Recording */,
+				EB1A05022A59C84400DD5F9B /* Converting */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EB1A04FC2A59C84400DD5F9B /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A04FD2A59C84400DD5F9B /* Recording.swift */,
+				EB1A04FE2A59C84400DD5F9B /* RecordingView.swift */,
+				EB1A04FF2A59C84400DD5F9B /* RecordingViewModel.swift */,
+				EB1A05002A59C84400DD5F9B /* RecordingViewController.swift */,
+				EB1A05012A59C84400DD5F9B /* RecordingInitializer.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		EB1A05022A59C84400DD5F9B /* Converting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Converting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB1A04C72A59C7D500DD5F9B /* Ekhos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1A04F22A59C7DA00DD5F9B /* Build configuration list for PBXNativeTarget "Ekhos" */;
+			buildPhases = (
+				4706DED12230D5BB844F22D0 /* [CP] Check Pods Manifest.lock */,
+				EB1A04C42A59C7D500DD5F9B /* Sources */,
+				EB1A04C52A59C7D500DD5F9B /* Frameworks */,
+				EB1A04C62A59C7D500DD5F9B /* Resources */,
+				8CE8BED465399B0705231CFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ekhos;
+			packageProductDependencies = (
+				EB05D7BD2A59D28A0013CE0E /* Waveform */,
+				EBDEF1842A59E43000CF2FE2 /* DSWaveformImage */,
+				EB4C10062A5A260E00A7B148 /* AudioKit */,
+			);
+			productName = Ekhos;
+			productReference = EB1A04C82A59C7D500DD5F9B /* Ekhos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB1A04DD2A59C7DA00DD5F9B /* EkhosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1A04F52A59C7DA00DD5F9B /* Build configuration list for PBXNativeTarget "EkhosTests" */;
+			buildPhases = (
+				50489E41730E2C025A48A66D /* [CP] Check Pods Manifest.lock */,
+				EB1A04DA2A59C7DA00DD5F9B /* Sources */,
+				EB1A04DB2A59C7DA00DD5F9B /* Frameworks */,
+				EB1A04DC2A59C7DA00DD5F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1A04E02A59C7DA00DD5F9B /* PBXTargetDependency */,
+			);
+			name = EkhosTests;
+			productName = EkhosTests;
+			productReference = EB1A04DE2A59C7DA00DD5F9B /* EkhosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1A04E72A59C7DA00DD5F9B /* EkhosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1A04F82A59C7DA00DD5F9B /* Build configuration list for PBXNativeTarget "EkhosUITests" */;
+			buildPhases = (
+				DF41BBC7170EB2E5BB5CED82 /* [CP] Check Pods Manifest.lock */,
+				EB1A04E42A59C7DA00DD5F9B /* Sources */,
+				EB1A04E52A59C7DA00DD5F9B /* Frameworks */,
+				EB1A04E62A59C7DA00DD5F9B /* Resources */,
+				EF6C4B661FCD9CFDA75C476F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1A04EA2A59C7DA00DD5F9B /* PBXTargetDependency */,
+			);
+			name = EkhosUITests;
+			productName = EkhosUITests;
+			productReference = EB1A04E82A59C7DA00DD5F9B /* EkhosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1A04C02A59C7D500DD5F9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EB1A04C72A59C7D500DD5F9B = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					EB1A04DD2A59C7DA00DD5F9B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EB1A04C72A59C7D500DD5F9B;
+					};
+					EB1A04E72A59C7DA00DD5F9B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EB1A04C72A59C7D500DD5F9B;
+					};
+				};
+			};
+			buildConfigurationList = EB1A04C32A59C7D500DD5F9B /* Build configuration list for PBXProject "Ekhos" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB1A04BF2A59C7D500DD5F9B;
+			packageReferences = (
+				EB05D7BC2A59D28A0013CE0E /* XCRemoteSwiftPackageReference "Waveform" */,
+				EBDEF1832A59E43000CF2FE2 /* XCRemoteSwiftPackageReference "DSWaveformImage" */,
+				EB4C10052A5A260E00A7B148 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
+			productRefGroup = EB1A04C92A59C7D500DD5F9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1A04C72A59C7D500DD5F9B /* Ekhos */,
+				EB1A04DD2A59C7DA00DD5F9B /* EkhosTests */,
+				EB1A04E72A59C7DA00DD5F9B /* EkhosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1A04C62A59C7D500DD5F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1A04D82A59C7D900DD5F9B /* LaunchScreen.storyboard in Resources */,
+				EB1A04D52A59C7D900DD5F9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1A04DC2A59C7DA00DD5F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1A04E62A59C7DA00DD5F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4706DED12230D5BB844F22D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ekhos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50489E41730E2C025A48A66D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EkhosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE8BED465399B0705231CFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ekhos/Pods-Ekhos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ekhos/Pods-Ekhos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ekhos/Pods-Ekhos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF41BBC7170EB2E5BB5CED82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ekhos-EkhosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF6C4B661FCD9CFDA75C476F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ekhos-EkhosUITests/Pods-Ekhos-EkhosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ekhos-EkhosUITests/Pods-Ekhos-EkhosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ekhos-EkhosUITests/Pods-Ekhos-EkhosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1A04C42A59C7D500DD5F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1A05042A59C84500DD5F9B /* RecordingView.swift in Sources */,
+				EB1A04CC2A59C7D500DD5F9B /* AppDelegate.swift in Sources */,
+				EB1A05062A59C84500DD5F9B /* RecordingViewController.swift in Sources */,
+				EB1A04CE2A59C7D500DD5F9B /* SceneDelegate.swift in Sources */,
+				EB1A05052A59C84500DD5F9B /* RecordingViewModel.swift in Sources */,
+				EB1A05072A59C84500DD5F9B /* RecordingInitializer.swift in Sources */,
+				EB1A05032A59C84500DD5F9B /* Recording.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1A04DA2A59C7DA00DD5F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1A04E32A59C7DA00DD5F9B /* EkhosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1A04E42A59C7DA00DD5F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1A04ED2A59C7DA00DD5F9B /* EkhosUITests.swift in Sources */,
+				EB1A04EF2A59C7DA00DD5F9B /* EkhosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1A04E02A59C7DA00DD5F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1A04C72A59C7D500DD5F9B /* Ekhos */;
+			targetProxy = EB1A04DF2A59C7DA00DD5F9B /* PBXContainerItemProxy */;
+		};
+		EB1A04EA2A59C7DA00DD5F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1A04C72A59C7D500DD5F9B /* Ekhos */;
+			targetProxy = EB1A04E92A59C7DA00DD5F9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB1A04D62A59C7D900DD5F9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1A04D72A59C7D900DD5F9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB1A04F02A59C7DA00DD5F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB1A04F12A59C7DA00DD5F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB1A04F32A59C7DA00DD5F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E93E7E41A426E910C04141 /* Pods-Ekhos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ATC4M43PB8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ekhos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conceitos.Ekhos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EB1A04F42A59C7DA00DD5F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B5ADEA9EC09834E43C4C77 /* Pods-Ekhos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ATC4M43PB8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ekhos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conceitos.Ekhos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EB1A04F62A59C7DA00DD5F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31CAEF9C123CFC28C8F0A43A /* Pods-EkhosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ATC4M43PB8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conceitos.EkhosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ekhos.app/Ekhos";
+			};
+			name = Debug;
+		};
+		EB1A04F72A59C7DA00DD5F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172397BBA0794570D3B6911A /* Pods-EkhosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ATC4M43PB8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conceitos.EkhosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ekhos.app/Ekhos";
+			};
+			name = Release;
+		};
+		EB1A04F92A59C7DA00DD5F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3436C8CC9795132CE9B169E8 /* Pods-Ekhos-EkhosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ATC4M43PB8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conceitos.EkhosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ekhos;
+			};
+			name = Debug;
+		};
+		EB1A04FA2A59C7DA00DD5F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADBFC9AB7E893C70CFAF64A7 /* Pods-Ekhos-EkhosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ATC4M43PB8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conceitos.EkhosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ekhos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1A04C32A59C7D500DD5F9B /* Build configuration list for PBXProject "Ekhos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1A04F02A59C7DA00DD5F9B /* Debug */,
+				EB1A04F12A59C7DA00DD5F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1A04F22A59C7DA00DD5F9B /* Build configuration list for PBXNativeTarget "Ekhos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1A04F32A59C7DA00DD5F9B /* Debug */,
+				EB1A04F42A59C7DA00DD5F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1A04F52A59C7DA00DD5F9B /* Build configuration list for PBXNativeTarget "EkhosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1A04F62A59C7DA00DD5F9B /* Debug */,
+				EB1A04F72A59C7DA00DD5F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1A04F82A59C7DA00DD5F9B /* Build configuration list for PBXNativeTarget "EkhosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1A04F92A59C7DA00DD5F9B /* Debug */,
+				EB1A04FA2A59C7DA00DD5F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB05D7BC2A59D28A0013CE0E /* XCRemoteSwiftPackageReference "Waveform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Waveform.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		EB4C10052A5A260E00A7B148 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+		EBDEF1832A59E43000CF2FE2 /* XCRemoteSwiftPackageReference "DSWaveformImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmrschmidt/DSWaveformImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB05D7BD2A59D28A0013CE0E /* Waveform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB05D7BC2A59D28A0013CE0E /* XCRemoteSwiftPackageReference "Waveform" */;
+			productName = Waveform;
+		};
+		EB4C10062A5A260E00A7B148 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4C10052A5A260E00A7B148 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		EBDEF1842A59E43000CF2FE2 /* DSWaveformImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBDEF1832A59E43000CF2FE2 /* XCRemoteSwiftPackageReference "DSWaveformImage" */;
+			productName = DSWaveformImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EB1A04C02A59C7D500DD5F9B /* Project object */;
+}
